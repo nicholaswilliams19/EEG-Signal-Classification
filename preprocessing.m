@@ -177,7 +177,6 @@ s02_meanEEG_3 = mean(s02_EEG_3_butter(idxStart:idxEnd));
 s02_meanEEG_4 = mean(s02_EEG_4_butter(idxStart:idxEnd));
 
 %offset data
-% Offset the filtered EEG data by subtracting the mean
 s02_EEG_1_butter_offset = s02_EEG_1_butter(idxStart:idxEnd) - s02_meanEEG_1;
 s02_EEG_2_butter_offset = s02_EEG_2_butter(idxStart:idxEnd) - s02_meanEEG_2;
 s02_EEG_3_butter_offset = s02_EEG_3_butter(idxStart:idxEnd) - s02_meanEEG_3;
